@@ -1,0 +1,44 @@
+body {
+    background-color: #8D7B68;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+}
+
+form {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input{
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+input[class="submit"] {
+    width: 30px;
+}
+
+fieldset {
+    background-color: #A4907C;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: #F1DEC9;
+}
+
+
+#name, #email, #age, #content, #preference {
+    width: 90%;
+}
+

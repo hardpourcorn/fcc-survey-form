@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p id="description"></p>
+    <form id="survey-form">
+        <fieldset>
+            <div>
+            <label for="name">Enter Your Name: </br>
+            </div>
+            <input id="name" name="name" type="text" placeholder="Full Name" required /></label></br>
+            <div><label for="email">Enter Your Email: </br></div>
+            <input id="email" name="email" type="email" placeholder="Email@email.com" required /></label></br>
+            <div><label for="age">Age: </br></div>
+            <input id="age" type="number" name="age" min="13" max="120" placeholder="Age" /></label></br>
+        </fieldset>
+        <fieldset>
+            <div>
+            <label for="dropdown">How seriously do you take Apex?</br>
+            </div>
+            <select id="dropdown" name="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">I like to play pubs and ranked with my friends</option>
+                <option value="2">I exclusively play Ranked</option>
+                <option value="3">I have played in a tournament(T1, T2, or T3)</option>
+                <option value="4">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+            <div><label>Have you played any other Battle Royales?</label></div>
+            <label for="yes"><input id="yes" type="radio" name="battle-royale" class="inline" checked /> Yes</label>
+            <label for="no"><input id="no" type="radio" name="battle-royale" class="inline" /> No</label>
+          </fieldset>
+        <fieldset>
+          <div><label for="content">What kind of Apex content do you consume? If at all.</label></br></div>
+            <input type="checkbox" id="content1" name="content1" value="None">
+            <label for="content1"> I do not watch any Apex content</label><br>
+            <input type="checkbox" id="content2" name="content2" value="Videos">
+            <label for="content2"> I like to watch videos on Youtube</label><br>
+            <input type="checkbox" id="content3" name="content3" value="Streams">
+            <label for="content3"> I occasionally watch streams on Twitch, Kick, etc.</label>
+        </fieldset>
+        <fieldset>
+            <div><label for="preference">In a short paragraph, explain what sets Apex apart from other Battle Royales out there?</div>
+                <textarea id="preference" name="preference" rows="3" cols="30" placeholder="I like movement, the abilities, endgames, etc..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+        
+</body>
+</html>
