@@ -1,6 +1,7 @@
 body {
     background-color: #8D7B68;
     display: flex;
+    flex-direction: column;
     width: 90%;
     justify-content: center;
     align-self: center;
@@ -38,7 +39,7 @@ fieldset {
 }
 
 
-#name, #email, #age, #content, #preference {
+#name, #email, #age, #content, #preference, #title, #description {
     width: 90%;
 }
 

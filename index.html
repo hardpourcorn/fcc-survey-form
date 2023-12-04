@@ -7,18 +7,18 @@
     <title>Apex</title>
 </head>
 <body>
-    <h1 id="title"></h1>
-    <p id="description"></p>
+    <h1 id="title">Apex Legends Survey</h1>
+    <p id="description">This is a  survey to gauge people's interest and their level of interest in Apex Legends</p>
     <form id="survey-form">
         <fieldset>
             <div>
-            <label for="name">Enter Your Name: </br>
+            <label for="name" id="name-label">Enter Your Name: </br>
             </div>
             <input id="name" name="name" type="text" placeholder="Full Name" required /></label></br>
-            <div><label for="email">Enter Your Email: </br></div>
+            <div><label for="email" id="email-label">Enter Your Email: </br></div>
             <input id="email" name="email" type="email" placeholder="Email@email.com" required /></label></br>
-            <div><label for="age">Age: </br></div>
-            <input id="age" type="number" name="age" min="13" max="120" placeholder="Age" /></label></br>
+            <div><label for="number" id="number-label">Age: </br></div>
+            <input id="number" type="number" name="age" min="13" max="120" placeholder="Age" /></label></br>
         </fieldset>
         <fieldset>
             <div>
@@ -35,8 +35,8 @@
         </fieldset>
         <fieldset>
             <div><label>Have you played any other Battle Royales?</label></div>
-            <label for="yes"><input id="yes" type="radio" name="battle-royale" class="inline" checked /> Yes</label>
-            <label for="no"><input id="no" type="radio" name="battle-royale" class="inline" /> No</label>
+            <label for="yes"><input id="yes" type="radio" name="battle-royale" value="yes" class="inline" checked /> Yes</label>
+            <label for="no"><input id="no" type="radio" name="battle-royale" value="no" class="inline" /> No</label>
           </fieldset>
         <fieldset>
           <div><label for="content">What kind of Apex content do you consume? If at all.</label></br></div>
@@ -52,7 +52,7 @@
                 <textarea id="preference" name="preference" rows="3" cols="30" placeholder="I like movement, the abilities, endgames, etc..."></textarea>
             </label>
         </fieldset>
-        <input type="submit" value="Submit" />
+        <input id="submit" type="submit" value="Submit" />
     </form>
         
 </body>
